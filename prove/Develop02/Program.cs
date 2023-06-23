@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Net.Mail;
+namespace WindowsApplication1;
 
 class Program
 {
@@ -54,13 +56,11 @@ class Program
                 Console.WriteLine("What is the filename?");
                 string name = Console.ReadLine();
 
-                daily._entries = daily.LoadFromFile(name);
-
-                foreach (Entry i in daily._entries) 
-                {
-                    i.Display();
-                }
+                daily._entries = daily.LoadFromFile(name);         
+                
+                
             } else if (choice == "4")
+            
             {
                 daily.SaveToFile(daily._entries);   
             }
@@ -68,6 +68,6 @@ class Program
                         
         } while (choice != "5");
         
-
+    
     }
 }
