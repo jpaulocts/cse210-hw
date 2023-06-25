@@ -29,6 +29,7 @@ class Program
       
         while ((line != "quit"))
         {
+             Console.Clear();
             string reference = scripchosen.GetReference().GetDisplayText();
             string text = scripchosen.GetDisplayText();
 
@@ -50,11 +51,9 @@ class Program
                 hidden = scripchosen.IsCompletelyHidden();
             }
 
-            Console.Clear();
+           
 
-            
-
-            
+                
 
         }
         
