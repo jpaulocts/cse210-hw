@@ -29,7 +29,7 @@ class Program
       
         while ((line != "quit"))
         {
-             Console.Clear();
+            Console.Clear();
             string reference = scripchosen.GetReference().GetDisplayText();
             string text = scripchosen.GetDisplayText();
 

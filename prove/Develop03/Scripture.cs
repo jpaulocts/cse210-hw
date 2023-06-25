@@ -24,16 +24,22 @@ public class Scripture
 
     public void HideRandomWords() 
     {
+        bool test;
+        
+        do {
+
+                    
         Random rnd = new Random();
         int number = rnd.Next(0, _words.Count());
 
-        
+        test = _words[number].IsHidden();
         _words[number].Hide();
 
-        
+       
+        } while (test == true);
 
-
-    
+   
+   
         
     }
 
