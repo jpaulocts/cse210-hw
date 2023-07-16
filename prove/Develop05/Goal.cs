@@ -61,16 +61,5 @@ public abstract class Goal
 
    } 
    
-public bool SetHealth(string health)
-{
-    if (health == "no")
-    {
-        return _Ishealth = false;
-    } else {
-        
-        return _Ishealth= true;
-    }
-   
-}
 
 }
